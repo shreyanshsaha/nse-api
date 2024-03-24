@@ -32,7 +32,7 @@ def _retrieve_index_fields(data):
     'name': data['indexName'],
     'price': data['last'],
     'open': data['open'],
-    'open': data['previousClose'],
+    'close': data['previousClose'],
     'change': 0,
     'percChange': data['percChange']
   }
