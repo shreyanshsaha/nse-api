@@ -30,7 +30,7 @@ def index(stock):
       data = get_stock_info_from_cache(stock)
     except Exception as e:
       logger.error(e)
-      return make_response("Server Failure", 500)
+      return make_response(str(e), 500)
 
     return jsonify(data)
 
